@@ -1,0 +1,14 @@
+{
+  "name": "jhonny-grbl-examples",
+  "version": "1.0.0",
+  "description": "jhonny-grbl-examples",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@jmdevall/jhonny-grbl": "file:../jhonny-grbl"
+  }
+}
