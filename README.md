@@ -1,5 +1,26 @@
 
+prerequisites:
+
+- Basic knowlegde of arduino and programming. There are several tutorials, books etc over there, for example: https://www.arduino.cc/en/Guide/HomePage You must be able to install programms on the board, be fammiliar with simple sensors, leds, etc, read/write ports, PWM, serial communication with the host, etc.
+- mid knowlegde of grbl: https://github.com/gnea/grbl you must be able to install grbl in arduino UNO, last version of grbl at the moment is grbl1.1. You must be able to send commands to it via serial port, do basic configuration etc. You must be able to connect of stepper mottors in real and get moving. Basic Knowledge of GCode https://en.wikipedia.org/wiki/G-code , and general CNC machines.
+- Basic knwolegde of bCNC: https://github.com/vlachoudis/bCNC . you must be able to install bCNC and operate it. Connect bCNC to grbl via usb and operate.
+- Mid knwoledge javascript in server side: https://www.w3schools.com/nodejs/ and typescript https://www.typescriptlang.org/docs/home.html for understanding of interals of jhonny-grbl code.
+- Mid knowledge of redux: https://redux.js.org/ the javascript state/action framework based on.
+
+Hardware necesary:
+
+- 1 arduino uno board, prefferible grbl shield for more easy connection of .
+- 3 step motors to check moving for real.
+- test board for prototiping.
+- multimeter for testing voltages
+- end of limit switch for prototiping
+- 1 additional arduino, UNO, or mega for testing addtional external I/Os
+
+
 Lets start coding helloworld.js:
+
+jhonny grbl is simple a state machine where we maintain the insternal state of the proxy. The proxy is the element between grbl and the host
+We can ignore the host side and send commands directly to de grbl side
 
 first we import grbl11ProxyReducer and print initialState:
 
