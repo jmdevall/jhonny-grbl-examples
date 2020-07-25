@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@jmdevall/jhonny-grbl": "file:../jhonny-grbl"
+    "@jmdevall/jhonny-grbl": "file:../jhonny-grbl",
+    "redux": "^4.0.5"
   }
 }
